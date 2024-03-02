@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="CoreTemp">
+      <UniqueIdentifier>{551cf3b0-f89e-4a3e-8888-3838dfb5ae45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="serialCom">
+      <UniqueIdentifier>{c9b3c3d9-b16e-4cc2-9b2b-e63ab198d32b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sysinfo">
+      <UniqueIdentifier>{2ad01c80-5000-464f-b2f2-a9953cadb183}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="coretemp\sharedmem\GetCoreTempInfo.h">
+      <Filter>CoreTemp</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="winserial\WinSerial.h">
+      <Filter>serialCom</Filter>
+    </ClInclude>
+    <ClInclude Include="sysinfo\include\ProcessInfo.h">
+      <Filter>Sysinfo</Filter>
+    </ClInclude>
+    <ClInclude Include="sysinfo\include\SystemInformation.h">
+      <Filter>Sysinfo</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="coretemp\sharedmem\GetCoreTempInfo.cpp">
+      <Filter>CoreTemp</Filter>
+    </ClCompile>
+    <ClCompile Include="winserial\WinSerial.cpp">
+      <Filter>serialCom</Filter>
+    </ClCompile>
+    <ClCompile Include="sysinfo\src\ProcessInfo.cpp">
+      <Filter>Sysinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="sysinfo\src\SystemInformation.cpp">
+      <Filter>Sysinfo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="coretemp\sharedmem\x64\GetCoreTempInfo.dll">
+      <Filter>CoreTemp</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="coretemp\sharedmem\x64\GetCoreTempInfo.lib">
+      <Filter>CoreTemp</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

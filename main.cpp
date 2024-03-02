@@ -1,5 +1,5 @@
 #include "coretemp/sharedmem/GetCoreTempInfo.h"
-#include "sysinfo/include/SystemInformation.h"
+#include "sysinfo/include/SystemInformation.h" // https://github.com/SaulBerrenson/sys_info/tree/main
 #include "Struct.h"
 #include "winserial/WinSerial.h"
 #include <iostream>
